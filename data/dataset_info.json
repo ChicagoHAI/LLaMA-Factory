@@ -438,7 +438,22 @@
     },
     "folder": "python"
   },
-  "debates": {"file_name": "/data/karen/LLaMA-Factory//data/debates_maskedAll.json", "columns": {"prompt": "text"}},
-  "sotu": {"file_name": "/data/karen/LLaMA-Factory//data/sotu_maskedAll.json", "columns": {"prompt": "text"}},
-  "campaign": {"file_name": "/data/karen/LLaMA-Factory//data/campaign_maskedAll.json", "columns": {"prompt": "text"}}
+  "debates_maskedAll": {
+    "file_name": "/data/karen/LLaMA-Factory/data/debates_maskedAll.json",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "sotu_maskedAll": {
+    "file_name": "/data/karen/LLaMA-Factory/data/sotu_maskedAll.json",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "campaign_maskedAll": {
+    "file_name": "/data/karen/LLaMA-Factory/data/campaign_maskedAll.json",
+    "columns": {
+      "prompt": "text"
+    }
+  }
 }
