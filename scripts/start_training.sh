@@ -5,7 +5,8 @@ conda activate llama-factory
 
 EXT=maskedAll
 # DATA=debates
-DATA=sotu
+# DATA=sotu
+DATA=campaign
 # NUM_SPKS=18  # DEBATES: 19, SOTU: 43, CAMPAIGN: 18
 
 PROJ_DIR=/data/karen/debate-divisiveness/code/LM/revision/$DATA"_"$EXT
@@ -23,6 +24,7 @@ CUDA_VISIBLE_DEVICES=0 llamafactory-cli train \
     --do_train True \
     --model_name_or_path google/gemma-2b \
     --finetuning_type lora \
+    --lora_target q_proj,v_proj \
     --template default \
     --flash_attn auto \
     --dataset_dir data \
@@ -44,8 +46,7 @@ CUDA_VISIBLE_DEVICES=0 llamafactory-cli train \
     --lora_rank 8 \
     --lora_alpha 16 \
     --lora_dropout 0 \
-    --lora_target q_proj,v_proj \
     --plot_loss True \
     --overwrite_output_dir True \
     --new_special_tokens "<DEBATE_START>,<DEBATE_END>,<ENT>" \
-    --lr_scheduler_type cosine \
+    --lr_scheduler_type linear  # to match gpt-2
