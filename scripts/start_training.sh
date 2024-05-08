@@ -7,7 +7,6 @@ EXT=maskedAll
 # DATA=debates
 # DATA=sotu
 DATA=campaign
-# NUM_SPKS=18  # DEBATES: 19, SOTU: 43, CAMPAIGN: 18
 
 PROJ_DIR=/data/karen/debate-divisiveness/code/LM/revision/$DATA"_"$EXT
 LF_DIR=/data/karen/LLaMA-Factory
