@@ -1,0 +1,10 @@
+model_name_or_path: microsoft/phi-1_5
+adapter_name_or_path:  /data/karen/LLaMA-Factory/saves/campaign_maskedAll/Phi_1-5b/train_2024-05-13
+template: default
+finetuning_type: lora
+output_dir: /data/karen/LLaMA-Factory/saves/campaign_maskedAll/Phi_1-5b/train_2024-05-13
+new_special_tokens: "<DEBATE_START>,<DEBATE_END>,<ENT>"
+
+
+
+

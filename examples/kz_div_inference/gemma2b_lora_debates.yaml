@@ -1,6 +1,6 @@
 model_name_or_path: google/gemma-2b
-adapter_name_or_path: saves/debates_maskedAll/Gemma-2b/train_2024-05-07
+adapter_name_or_path: /data/karen/LLaMA-Factory/saves/debates_maskedAll/Gemma-2b/train_2024-05-13_15eps
 template: default
 finetuning_type: lora
-output_dir: saves/debates_maskedAll/Gemma-2b/train_2024-05-07
+output_dir: /data/karen/LLaMA-Factory/saves/debates_maskedAll/Gemma-2b/train_2024-05-13_15eps
 new_special_tokens: "<DEBATE_START>,<DEBATE_END>,<ENT>"
